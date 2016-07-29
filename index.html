@@ -3,19 +3,44 @@
 <head>
 	<meta charset="UTF-8">
 	<title>BA-MD</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/foundation.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<script src="https://use.fontawesome.com/f93e944081.js"></script>
+	<link rel="shortcut icon" href="../../Red Academy/website/images/favicon.ico" type="image/x-icon" />
 </head>
 <!-- this is a git comment -->
 <!-- this is another test comment -->
 
 <body id="main">
-		<header id="header" class="clear-after">
+
+		<div class="navigation padding-lrg">
 			<figure class="left logo">
 				<img src="https://unsplash.it/150" alt="logo" >
 			</figure>
-			<nav class="right">
+			<nav class="flex-nav">
+			<ul class="menu"> <!-- this is the flex container -->
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Projects</a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">Contact</a></li>
+				<li class="social">
+				<a href="http://twitter.com/thebinzy"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+				</li>
+				<li class="social">
+				<a href="http://instagram.com/thebinzy"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+				</li>
+				<li class="social">
+				<a href="http://github.com/MarissaBinstock"><i class="fa fa-github" aria-hidden="true"></i></a>
+				</li>
+					<li class="social">
+				<a href="https://ca.linkedin.com/in/marissa-binstock-52b84b7"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+				</li>
+			</ul>
+		</nav>
+	</div>	
+			<!-- <nav class="right">
 				<ul class="clear-after">
 					<li class="left"><a href="#main">Home</a></li>
 					<li class="left"><a href="#about-us">About Us</a></li>
@@ -23,15 +48,16 @@
 					<li class="left"><a href="#blog">Blog</a></li>
 					<li class="left"><a href="#contact">Contact</a></li>
 				</ul>	
-			</nav>
+			</nav> -->
 		</header>
-		<section class="hero">
-			<h1>The art of healthy web development</h1>
+		<section class="title padding-lrg">
+			<h1>B.A-M.D</h1>
+			<h2>The art of healthy web development</h2>
 		</section>
 
 		<section class="about-us clear-after" id="about-us">
-			<h2>Get to know us</h2>
-			<h3>The Execs</h3>
+			<h3>Get to know us</h3>
+			<h4>The Execs</h4>
 			<div class="col-1 clear-after">
 				<div class="col-1-4 left center">
 					<figure>
@@ -204,11 +230,17 @@
 				</div>
 				<div>   
 		       <p>Subscribe to our newsletter</p>  
+		       <div class="left padding-sm">
 		       <label for="yes">Yes</label>   
 		       <input type="radio" name="yes" value="small">
+		       </div>
+		       <div class="left padding-sm">
 		       <label for="no">No</label>
-		       <input type="radio" name="no" value="no">     
-					<input type="submit" value="Submit">
+		       <input type="radio" name="no" value="no">
+		       <div class="right">   
+					<input class= "padding-sm" type="submit" value="Submit">
+					</div>  
+					</div>
 				</div>	
 			</form>
 			
