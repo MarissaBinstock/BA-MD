@@ -96,8 +96,8 @@ h3 {
 }*/
 /*Title section*/
 
-.title-wrapper {
-	width: 900px;
+.wrapper {
+	max-width: 900px;
 	margin: 0 auto;
 	text-align: center;
 }
@@ -139,11 +139,6 @@ h3 {
 
 /*Projects*/
 
-.projects-wrapper {
-    max-width: 900px;
-    margin: 0 auto;
-    text-align: center;
-}
 .projects{
 	padding: 80px 0;
 }
@@ -194,13 +189,21 @@ h3 {
    }
 
    .blog-img {
-    margin-right: 10%;
-    margin-left: 10%;
+    margin: 40% 10% 10%;
     width: 65%;
-    border-radius: 5%;
+    border-radius: 2%;
     box-shadow: 5px 5px 5px #296275;
     box-sizing: border-box;
   }
+
+  .blog p {
+  	text-align: initial;
+  }
+   .blog h4 {
+    text-align: left;
+    margin-bottom: 0;
+   }
+   
 /*Contact*/
 
 .contact-wrapper {
@@ -238,14 +241,18 @@ map {
 	display: none;
 }
 
+/*tried to center these all in separate flexboxes but that didnt quite work - not sure the solution*/
 label, input {
-	font-size: 1.5rem;
+	font-size: 1rem;
+}
+
+label {
+	padding-right: 10px;
 }
 .contact .flex-container {
 	padding: 10px;
+	justify-content: center;
 }
-
-/*cannot for the life of me figure out why the email line is showing up like that when it has the exact same styles applied*/
 
 .submit {
 	color :white;
@@ -253,4 +260,12 @@ label, input {
 	border-radius: 5px;
 	box-shadow: 5px 5px 5px #999;
 	font-size: 1rem;
-}
+	/*transform: all .8s ease-in-out;
+	transition: all .8s ease-in-out;
+}*/
+
+/*.submit: hover {
+	-webkit-transform: rotate(360deg);
+	transform: rotate(360deg);
+
+}*/

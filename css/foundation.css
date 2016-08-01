@@ -37,6 +37,9 @@ h4 {
 .center {
 	text-align: center;
 }
+.left {
+	text-align: left;
+}
 
 /*Margins&Padding*/
 .padding-sm {
