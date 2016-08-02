@@ -24,7 +24,7 @@ body {
 }
 
 h1, h2, h3, h4, h5 {
-	font-family: 'Playfair Display', serif;
+	font-family: 'Fira Sans', sans-serif;
 	font-weight: 700;
 }
 
@@ -83,8 +83,12 @@ h3 {
 	flex: 1;
 }
 
+.small-nav {
+	display: none;
+}
+
 /*these werent working as I expected either - looking forward to learning more about how this works*/
-/*@media all and (max-width: 1000px) {
+@media all and (max-width: 1000px) {
 	.flex-nav ul {
 		flex-wrap: wrap;
 	}
@@ -96,7 +100,7 @@ h3 {
 	.flex-nav .social {
 		flex:1 1 25%;
 	}
-}*/
+}
 /*Title section*/
 
 .wrapper {
@@ -142,8 +146,9 @@ h3 {
 
 /*Projects*/
 
-.projects{
-	padding: 80px 0;
+.projects h3 {
+	margin-top: 10%;
+	/*padding: 20%;*/
 }
 
 .galleryItem {
@@ -265,10 +270,20 @@ label {
 	font-size: 1rem;
 	/*transform: all .8s ease-in-out;
 	transition: all .8s ease-in-out;
-}*/
+}*/}
 
 /*.submit: hover {
 	-webkit-transform: rotate(360deg);
 	transform: rotate(360deg);
 
 }*/
+
+@media screen and (max-width: 480px) {
+	.small-nav {
+		display: block;
+	}
+
+	.large-nav {
+		display: none;
+	}
+}

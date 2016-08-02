@@ -3,9 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<title>BA-MD 2.0</title>
+	<link href='https://fonts.googleapis.com/css?family=Eczar' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Fira+Sans' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="css/foundation.css">
 	<link rel="stylesheet" href="css/main.css">
-	<link href="https://fonts.googleapis.com/css?family=Eczar|Fira+Sans" rel="stylesheet">
 	<script src="https://use.fontawesome.com/f93e944081.js"></script>
 <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
@@ -13,20 +14,20 @@
 	<script src="js/scripts.js"></script>
 
 </head>
-<body>
+<body id="home">
 
 <!-- Nav Bar -->
 		<div class ="nav-wrapper">
 			<!-- <figure class="left logo">
 				<img src="https://unsplash.it/150" alt="logo" >
 			</figure> -->
-		<nav class="flex-nav">
+		<nav class="flex-nav large-nav">
 			<ul> 
 				<li><a href="#">Home</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Projects</a></li>
-				<li><a href="#">Blog</a></li>
-				<li><a href="#">Contact</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="#blog">Blog</a></li>
+				<li><a href="#contact">Contact</a></li>
 				<li class="social">
 				<a href="http://twitter.com/thebinzy"><i class="fa fa-twitter" aria-hidden="true"></i></a>
 				</li>
@@ -41,7 +42,17 @@
 				</li>
 			</ul>
 		</nav>
-	</div>
+	</div>	
+		<nav class="small-nav right">
+			<select id="small-nav">
+				<option value="home">Home</option>
+				<option value="about">About Us</option>
+				<option value="projects">Projects</option>
+				<option value="blog">Blog</option>
+				<option value="contact">Contact Us</option>
+			</select>
+		</nav>	
+	
 
 	<!-- Title section -->
 	<div class="hero">
@@ -106,7 +117,7 @@
 
 		<!-- Projects -->
 
-	<section class="Projects" id="projects">
+	<section class="projects" id="projects">
 		<div class="wrapper clearfix">
 		<h3 class="center">Projects</h3>
 			<div class="galleryItem">
