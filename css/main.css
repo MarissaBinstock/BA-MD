@@ -5,6 +5,9 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
+/*I completely understant the concept of dry code and realize this is far from it.
+I think I ended up over-writing my CSS with the media queries in it. I had the projects section breaking to be a column of two and then one column. Not sure where the queries disappeared to.*/
+
 /*body*/
 
 body {
