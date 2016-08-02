@@ -4,14 +4,11 @@ body {
 	color: black;
 	font-family: sans-serif;
 	font-size: 2rem;
-<<<<<<< HEAD
 	font-family: 'Eczar', serif;
 }
 
 h2,h3,h4 {
 	font-family: 'Fira Sans', sans-serif;
-=======
->>>>>>> gh-pages
 }
 
 /*Font Sizes*/
@@ -31,24 +28,18 @@ h3 {
 	font-size: 2rem;
 }
 
-<<<<<<< HEAD
 h4 {
 	font-size: 1.25rem;
 }
 
-=======
->>>>>>> gh-pages
 /*Alignment*/
 
 .center {
 	text-align: center;
 }
-<<<<<<< HEAD
 .left {
 	text-align: left;
 }
-=======
->>>>>>> gh-pages
 
 /*Margins&Padding*/
 .padding-sm {
@@ -119,22 +110,14 @@ h4 {
 }
 
 /*Inputs*/
-<<<<<<< HEAD
 /*input {
-=======
-input {
->>>>>>> gh-pages
 		border: 1px solid green;
     display: block;
     margin: 0.2rem;
     font-size: 100%;
     padding: :0.2em;
     font-size: inherit;
-<<<<<<< HEAD
     }*/
-=======
-    }
->>>>>>> gh-pages
 
  select {
 
@@ -146,12 +129,6 @@ input {
 	height: auto;
 }
 
-<<<<<<< HEAD
-=======
-figure {
-	margin:0;
-}
->>>>>>> gh-pages
 /*Floats*/
 
 .left {
@@ -202,7 +179,6 @@ figure {
 
 .auto {
 	margin: auto;
-<<<<<<< HEAD
 }
 
 /*flex*/
@@ -213,6 +189,4 @@ figure {
 
 .wrap {
 	flex-wrap: wrap;
-=======
->>>>>>> gh-pages
 }
