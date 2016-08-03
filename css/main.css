@@ -5,14 +5,10 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-/*I completely understant the concept of dry code and realize this is far from it.
-I think I ended up over-writing my CSS with the media queries in it. I had the projects section breaking to be a column of two and then one column. Not sure where the queries disappeared to.*/
 
 /*body*/
 
 body {
-	margin:0;
-
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -54,7 +50,7 @@ h3 {
 	letter-spacing: 2px;
 	text-decoration: none;
 	display: inline-block;
-	width: 100%;
+	width: 100%;  /*here it seems more efficient to give the width here than to each a*/
 	text-align: center;
 	}	
 
@@ -101,19 +97,13 @@ h3 {
 		flex:1 1 25%;
 	}
 }
+
 /*Title section*/
 
 .wrapper {
-	max-width: 900px;
 	margin: 0 auto;
-	text-align: center;
 }
 
-.hero {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
 
 /*about us section*/
 
@@ -122,57 +112,50 @@ h3 {
 		padding: 20px;
 }	
 
-	figure img {
-			width: 100%;
-			height: auto;
-			border: 2px solid #190482;
+		.execs {
+			justify-content: space-around;
+		  margin: 0 20%;
+   		padding-top: 3%;
 		}
 
-		figcaption {
-			text-align: center;
+	figure img {
+			height: auto;
+			border: 2px solid #190482;
 		}
 
 		figcaption p {
 			margin:0;
 		}
 
-		.flex-container {
-			display: flex;
-			justify-content: space-around;
-		  max-width: 900px;
-      margin: auto;
-		}
-
 
 /*Projects*/
 
 .projects h3 {
-	margin-top: 10%;
-	/*padding: 20%;*/
+	padding-top: 3%;
 }
 
-.galleryItem {
-	float: left;
-	width: 30%;
-	margin: 1.66%;
-	position: relative;
-}
+	.gallery {
+		margin: 0 auto;
+	}
 
-.galleryItem img {
-	width: 100%;
-	display: block;
-}
+	.galleryItem {
+		  margin: 2%;
+   		position: relative;
+		}
 
-.overlay {
-	position: absolute;
-	top: 0;
-	height: 100%;
-	width: 100%;
-	background: rgba(0,0,0,0.7);
-	color: white;
-	padding: 60px 25px;
-	display: none;
-}
+	.galleryItem img {
+		display: block;
+	}
+
+	.overlay {
+		position: absolute;
+		top: 0;
+		height: 100%;
+		background: rgba(0,0,0,0.7);
+		color: white;
+		padding: 60px 25px;
+		display: none;
+	}
 
 .galleryItem:hover .overlay {
 	display: block;
@@ -180,32 +163,29 @@ h3 {
 
 
 /*Blog*/
+
 .blog-posts {
 		background: rgba(221, 209, 231, 0.6);
 		padding: 30px;
 }	
 
-.blog {
+	.blog {
 		width: 75%;
     margin: auto;
     margin-bottom: 5%;
   }
 
-  .col-1-4 {
-    width: 25%;
-    box-sizing: border-box;
-   }
-
    .blog-img {
-    margin: 40% 10% 10%;
-    width: 65%;
-    border-radius: 2%;
-    box-shadow: 5px 5px 5px #296275;
-    box-sizing: border-box;
-  }
+	    margin: 15% 10% 10%;
+	    width: 70%;
+	    border-radius: 2%;
+	    box-shadow: 5px 5px 5px #296275;
+	    box-sizing: border-box;
+	  }
 
   .blog p {
   	text-align: initial;
+  	margin-bottom: 0;
   }
    .blog h4 {
     text-align: left;
@@ -218,21 +198,16 @@ h3 {
 	max-width: 900px;
 	margin:0 auto;
 }
-/*.contact {
-	padding: 40px 0 100px;
-}*/
 
 button {
 	padding :15px 25px;
 	margin: 15px;
 	font-size: 1rem;
-	text-align: center;
 	cursor: pointer;
 	color :white;
 	background-color: purple;
 	border-radius: 5px;
 	box-shadow: 5px 5px 5px #999;
-	display: block:
 	margin:0 auto;
 }
 
@@ -247,20 +222,25 @@ button {
 
 map {
 	display: none;
+	padding-top: 2%;
+	width: 100%;
 }
 
-/*tried to center these all in separate flexboxes but that didnt quite work - not sure the solution*/
-label, input {
-	font-size: 1rem;
-}
-
-label {
-	padding-right: 10px;
-}
-.contact .flex-container {
+.flex-form {
+	border: 0;
 	padding: 10px;
-	justify-content: center;
+	line-height: 50px;
+	font-size: 20px;
 }
+
+
+.contact .flex-container {
+	/*display: flex;*/
+	justify-content: center;
+	align-content: center;
+}
+
+
 
 .submit {
 	color :white;
@@ -268,15 +248,7 @@ label {
 	border-radius: 5px;
 	box-shadow: 5px 5px 5px #999;
 	font-size: 1rem;
-	/*transform: all .8s ease-in-out;
-	transition: all .8s ease-in-out;
-}*/}
-
-/*.submit: hover {
-	-webkit-transform: rotate(360deg);
-	transform: rotate(360deg);
-
-}*/
+}
 
 @media screen and (max-width: 480px) {
 	.small-nav {
