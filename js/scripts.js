@@ -1,31 +1,33 @@
-// $(document).ready(function(){
-// 	console.log("Hello World");
-// 	$("section").hide();
-// })
+
 
 $(document).ready(function(){
 	console.log("working");
-  // $(".message").click(function(){
-  // 	console.log("working2")
-  //   	alert('Thank you!');
-  //   });
-  // $(".about-us img").hide();
-  // $("h4").click(function() {
-  // 	$(".about-us img").fadeIn("slow")
-  // })
 
+// makes map appear
   $("button").click(function() {
   	$("map").toggle(1000);
+    $("html, body").animate({scrollTop: $('map').offset().top+500}, 1000);
   });
 
+// small-nav menu changes to select dropdown
   $('select').on('change', function(){
     var option = $(this).val();
     console.log(option);
     $("html, body").animate({scrollTop: $('#'+option).offset().top}, 1000);
   });
 
-  	
+// smoothscroll
+  $('.scroll').on('click', function(e){
+    e.preventDefault();
+    var option = $(this).attr('href');
+    console.log(option);
+    $("html, body").animate({ scrollTop: $(option).offset().top-30}, 1000);
+        });
+
+ // to make the map scroll to the bottom of the page
+     $('#bottom').on("click", function () {
+        $('html, body').animate({ scrollTop: $(document).height() }, 1200);
+                return false;
+      });	
 });
-
-
 

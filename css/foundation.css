@@ -40,9 +40,9 @@ h4 {
 	font-size: 1.25rem;
 }
 
-/*Alignment*/
+/*Text Alignment*/
 
-.center {
+.txt-center {
 	text-align: center;
 }
 .left {
@@ -62,7 +62,6 @@ h4 {
 	padding: 1rem;
 }
 
-
 .margin-none {
 	margin: 0;
 }
@@ -78,6 +77,13 @@ h4 {
 	margin: 1rem;
 }
 
+.auto {
+	margin: auto;
+}
+
+.center {
+	margin: 0 auto;
+}
 
 
 /*widths*/
@@ -119,19 +125,6 @@ h4 {
 .max-width-stnd {
 	max-width: 75rem;
 }
-/*Inputs*/
-/*input {
-		border: 1px solid green;
-    display: block;
-    margin: 0.2rem;
-    font-size: 100%;
-    padding: :0.2em;
-    font-size: inherit;
-    }*/
-
- select {
-
- }
 
 /*Images*/
 .img {
@@ -185,11 +178,6 @@ h4 {
 	border: 3px solid black;
 }
 
-/*Margins*/
-
-.auto {
-	margin: auto;
-}
 
 /*flex*/
 
@@ -201,7 +189,11 @@ h4 {
 	justify-content: center;
 }
 
-align-center {
+.space-around {
+	justify-content: space-around;
+}
+
+.align-center {
 	align-items: center;
 }
 
