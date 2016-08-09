@@ -40,6 +40,19 @@ h4 {
 	font-size: 1.25rem;
 }
 
+/*Position*/
+.fixed {
+	position: fixed;
+}
+
+.absolute {
+	position: absolute;
+}
+
+.relative {
+	position: relative;
+}
+
 /*Text Alignment*/
 
 .txt-center {
@@ -50,6 +63,10 @@ h4 {
 }
 
 /*Margins&Padding*/
+.padding-none {
+	padding: 0;
+}
+
 .padding-sm {
 	padding: 0.3rem;
 }
@@ -162,6 +179,10 @@ h4 {
 	display: inline-block;
 }
 
+.none {
+	display: none;
+}
+
 /*Lists*/
 
 .ul {
@@ -206,5 +227,9 @@ h4 {
 
 .space-btwn {
 	justify-content: space-between;
+}
+
+.column {
+	flex-direction: column;
 }
 

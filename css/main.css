@@ -22,27 +22,23 @@ body {
 
 h1, h2, h3, h4, h5 {
 	font-family: 'Fira Sans', sans-serif;
-	font-weight: 700;
 }
 
 h1 {
-	/*font-size: 72px;*/
 	color: #190482;
 	margin-bottom: 0px;
 }
 
 h2 {
-	/*font-size: 48px;*/
 	color: #B4870C;
 	margin-top:0;
 }
 
 h3 {
-	/*font-size: 36px;*/
 	color: #551a8b;
 }
 
-/*Nav Bar*/  
+/*Nav Bar*/ 
 
 .flex-nav a {
 	color: #551a8b;
@@ -50,7 +46,7 @@ h3 {
 	letter-spacing: 2px;
 	text-decoration: none;
 	display: inline-block;
-	width: 100%;  /*here it seems more efficient to give the width here than to each a*/
+	width: 100%;  /*it seems more efficient to give the width here than to each a*/
 	text-align: center;
 	}	
 
@@ -65,9 +61,6 @@ h3 {
 
 .flex-nav ul {
 	list-style: none;
-	margin:0;
-	padding: 0;
-	display: flex;
 }
 
 .flex-nav li {
@@ -91,7 +84,6 @@ h3 {
 }	
 
 		.execs {
-			justify-content: space-around;
 		  margin: 0 20%;
    		padding-top: 3%;
 		}
@@ -99,10 +91,6 @@ h3 {
 	figure img {
 			height: auto;
 			border: 2px solid #190482;
-		}
-
-		figcaption p {
-			margin:0;
 		}
 
 
@@ -140,17 +128,14 @@ h3 {
 		padding: 30px;
 }	
 
-	.blog {
-		width: 75%; /*tried to replace this with col-3-4 and everything went wonky*/
-    margin-bottom: 5%;
-  }
+.blog .col-3-4 {
+	padding-left: 5%;
+}
 
    .blog-img {
 	    margin: 15% 10% 10%;
-	    width: 70%;
 	    border-radius: 2%;
 	    box-shadow: 5px 5px 5px #296275;
-	    box-sizing: border-box;
 	  }
 
   .blog p {
@@ -180,20 +165,13 @@ button {
 	background-color: #660066;
 }
 
-.button:active {
-	box-shadow: 8px 8px 8px #A290D4;
-	transform: translateY(4px);	
-}
 
 map {
-	display: none;
 	padding-top: 2%;
-	width: 100%;
 }
 
 iframe {
 	height: 450px;
-	width: 100%;
 	border: 0;
 }
 
@@ -201,6 +179,11 @@ iframe {
 	padding: 10px;
 	line-height: 50px;
 	font-size: 20px;
+}
+
+.error {
+	color:red;
+	text-decoration: underline;
 }
 
 
@@ -212,8 +195,10 @@ iframe {
 	font-size: 1rem;
 }
 
-/*Media queries for responsiveness*/
 
+
+/*Media queries for responsiveness*/
+  /*Responsive Nav*/
 @media all and (max-width: 1240px) {
 	.flex-nav ul {
 		flex-wrap: wrap;
@@ -229,21 +214,35 @@ iframe {
 }
 
 @media all and (max-width: 600px) {
+	h1 {
+		font-size: 2.5rem;
+	}
+
+	h2 {
+		font-size: 2rem;
+	}
+
 	.flex-nav li {
 		flex-basis:100%;
   }
+
+  /*responsive About Us*/
   .flex-container.execs.space-around.max-width-stnd {
   	margin: 0;
   	  }
+
+  	  /*responsive slider*/
   .slider {
   	width: 75%;
   }	  
+
+  /*responsive projects*/
 	.galleryItem {
 		width: 25%;
 	}
 
-/*blog-post summary*/
-.col-3-4.right p  {   
+/*responsive blog-post summary*/
+.blog p  {   
 	display:none;
 	}	
 
@@ -252,19 +251,24 @@ iframe {
 	}	
 
 	.blog-img {
-		width: 100%;
+		width: 200%;
+	}
+	 
+	 /*responsive contact us*/
+	.flex-form {
+		width: 55%;
 	}
 
-	.flex-form {
-		width: 50%;
+	.error {
+		font-size: 10px;
 	}
 
 	.flex-container button {
 		display: none;
 	}
+
 }
-
-
+/*unused dropdown selector*/
 /*@media screen and (max-width: 480px) {
 	.small-nav {
 		display: block;
